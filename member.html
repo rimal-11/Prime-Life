@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PrimeLife</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- NAV -->
+    
+  <!-- NAV -->
+   <nav>
+    <a class="nav-logo" href="index.html">  PrimeLife</a>
+    <ul class="nav-links">
+      <li><a href="coreservices.html">Core Services</a></li>
+      <li><a href="daily.html">Daily Assistance</a></li>
+      <li><a href="member.html">Membership</a></li>
+      <li><a href="birthday.html">Birthday Presence</a></li>
+      <li><a href="silver.html">Silver Nest</a></li>
+      <li><a href="about.html">About Us</a></li>
+
+
+    </ul>
+       <button class="nav-cta" onclick="document.getElementById('contactModal').style.display='flex'">Get
+      Started</button>
+    <button class="hamburger" id="ham" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="coreservices.html" onclick="closeMob()">Core Services</a>
+    <a href="daily.html" onclick="closeMob()">Daily Assistance</a>
+    <a href="member.html" onclick="closeMob()">Membership</a>
+    <a href="member.html" onclick="closeMob()">Birthday Presence</a>
+    <a href="silver.html" onclick="closeMob()">Silver Nest</a>
+    <a href="about.html" onclick="closeMob()">About Us</a>
+
+
+  </div>
+
+    <!-- PLANS -->
+    <section id="plans">
+        <div class="section-header">
+            <span class="section-label">Membership</span>
+            <h2 class="section-title">Choose Your Plan</h2>
+            <p class="section-sub">We understand that families are not simply looking for “eldercare.” They are looking
+                for trust. They want to know their parents are respected, comfortable, emotionally supported, and
+                surrounded by genuine human connection even when they are far away.
+
+                Prime Life is a premium senior living and lifestyle support service thoughtfully created for seniors who
+                value dignity, independence, safety, and meaningful human connection.</p>
+        </div>
+        <div class="plans-grid">
+
+            <!-- SILVER -->
+            <div class="plan-card plan-silver reveal">
+                <div class="plan-tier">Silver</div>
+                <div class="plan-name">Basic</div>
+                <div class="plan-period">Essential support services for comfortable independent living.
+                </div>
+                <div class="plan-price">₹7,000</div>
+                <div class="plan-period">per month</div>
+                <div class="plan-divider"></div>
+                <ul class="plan-features">
+                    <li><span class="check">✓</span>Weekly check-in visits</li>
+                    <li><span class="check">✓</span>Meal monitoring</li>
+                    <li><span class="check">✓</span>Medicine reminders</li>
+                    <li><span class="check">✓</span>Hobby workshops</li>
+                    <li><span class="check">✓</span>Travel assistance</li>
+                    <li><span class="check">✓</span>WhatsApp updates</li>
+                    <li><span class="check">✓</span>Monthly reports</li>
+                </ul>
+            </div>
+
+            <!-- GOLD -->
+            <div class="plan-card plan-gold reveal" style="position:relative">
+             
+                <div class="plan-tier">Gold</div>
+                <div class="plan-name">Advanced</div>
+                <div class="plan-period">Enhanced assistance with wellness and lifestyle support.
+
+                </div>
+                <div class="plan-price">₹10,000</div>
+                <div class="plan-period">per month</div>
+                <div class="plan-divider"></div>
+                <ul class="plan-features">
+                    <li><span class="check">✓</span>Daily check-ins</li>
+                    <li><span class="check">✓</span>Meal monitoring</li>
+                    <li><span class="check">✓</span>Medicine reminders</li>
+                    <li><span class="check">✓</span>Travel assistance</li>
+                    <li><span class="check">✓</span>Nursing visits</li>
+                    <li><span class="check">✓</span>Diagnostics</li>
+                    <li><span class="check">✓</span>Doctor coordination</li>
+                    <li><span class="check">✓</span>Monthly reports</li>
+                    <li><span class="check">✓</span>Hobby workshops</li>
+                    <li><span class="check">✓</span>Elderly social clubs</li>
+                </ul>
+            </div>
+
+            <!-- PLATINUM -->
+            <div class="plan-card plan-platinum reveal">
+                <div class="plan-tier">Platinum</div>
+                <div class="plan-name">NRI Premium</div>
+                <div class="plan-period">Comprehensive premium support designed for NRIs seeking trusted care and
+                    complete peace of mind for their loved ones
+
+
+                </div>
+
+                <div class="plan-price">₹15,000</div>
+                <div class="plan-period">per month</div>
+                <div class="plan-divider"></div>
+                <ul class="plan-features">
+                    <li><span class="check">✓</span>Daily check-ins</li>
+                    <li><span class="check">✓</span>Meal monitoring</li>
+                    <li><span class="check">✓</span>Medicine reminders</li>
+                    <li><span class="check">✓</span>Nursing visits</li>
+                    <li><span class="check">✓</span>Diagnostics</li>
+                    <li><span class="check">✓</span>Doctor coordination</li>
+                    <li><span class="check">✓</span>Video calls with family</li>
+                    <li><span class="check">✓</span>Family dashboard access</li>
+                    <li><span class="check">✓</span>Emergency coordination</li>
+                    <li><span class="check">✓</span>Hospitalization support</li>
+                    <li><span class="check">✓</span>Hobby workshops</li>
+                    <li><span class="check">✓</span>Travel assistance</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="logo"> PrimeLife</div>
+    <p>Caring for your parents like family</p>
+    <p>Service Area: Thrissur, Kerala <br>
+    Contact Us:+91 9188242579 , +1 5879303523 (Canada) <br>
+   primelifetcr@gmail.com <br> www.primelife.org.in
+</p>
+  </footer>
+
+
+
+  <!-- Modal Overlay -->
+<div id="contactModal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.5); z-index:1000; align-items:center; justify-content:center;">
+  <div style="background:#fff; border-radius:12px; padding:2rem; width:340px; position:relative; box-shadow:0 20px 60px rgba(0,0,0,0.2);">
+
+    <!-- Close Button -->
+    <button onclick="document.getElementById('contactModal').style.display='none'"
+      style="position:absolute; top:12px; right:12px; background:none; border:none; font-size:22px; cursor:pointer; color:#888;">
+      &times;
+    </button>
+
+    <h2 style="margin:0 0 1.5rem; font-size:20px;">Contact Us</h2>
+
+    <!-- Address -->
+    <div style="display:flex; gap:12px; margin-bottom:1rem;">
+      <span style="font-size:22px;">📍</span>
+      <div>
+        <p style="margin:0; font-size:12px; color:#888;">Service Area</p>
+        <p style="margin:0; font-weight:500;">Thrissur, Kerala</p>
+      </div>
+    </div>
+
+    <!-- Phone -->
+    <div style="display:flex; gap:12px; margin-bottom:1rem;">
+      <span style="font-size:22px;">📞</span>
+      <div>
+        <p style="margin:0; font-size:12px; color:#888;">Phone</p>
+        <p style="margin:0; font-weight:500;">+91 9188242576</p>
+        <p style="margin:0; font-weight:500;">+1 5879303523</p>
+      </div>
+    </div>
+
+    <!-- Email -->
+    <div style="display:flex; gap:12px;">
+      <span style="font-size:22px;">✉️</span>
+      <div>
+        <p style="margin:0; font-size:12px; color:#888;">Email</p>
+        <p style="margin:0; font-weight:500;">primelifetcr@gmail.com</p>
+      </div>
+    </div>
+     <!-- web -->
+    <div style="display:flex; gap:12px;">
+      <span style="font-size:22px;">✉️</span>
+      <div>
+        <p style="margin:0; font-size:12px; color:#888;">Website</p>
+        <p style="margin:0; font-weight:500;">www.primelife.org.in</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+    <script>
+        // Hamburger
+        const ham = document.getElementById('ham');
+        const mob = document.getElementById('mobileMenu');
+        ham.addEventListener('click', () => mob.classList.toggle('open'));
+        function closeMob() { mob.classList.remove('open'); }
+
+        // Scroll reveal
+        const reveals = document.querySelectorAll('.reveal');
+        const obs = new IntersectionObserver((entries) => {
+            entries.forEach((e, i) => {
+                if (e.isIntersecting) {
+                    setTimeout(() => e.target.classList.add('visible'), (i % 6) * 80);
+                    obs.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.08 });
+        reveals.forEach(r => obs.observe(r));
+
+        // Smooth nav active state
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-links a');
+        window.addEventListener('scroll', () => {
+            let cur = '';
+            sections.forEach(s => { if (window.scrollY >= s.offsetTop - 100) cur = s.id; });
+            navLinks.forEach(a => {
+                a.style.color = a.getAttribute('href') === '#' + cur ? 'var(--gold)' : '';
+            });
+        });
+    </script>
+</body>
+
+</html>

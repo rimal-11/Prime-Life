@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PrimeLife</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- NAV -->
+  
+    <nav>
+    <a class="nav-logo" href="index.html"> PrimeLife</a>
+    <ul class="nav-links">
+      <li><a href="coreservices.html">Core Services</a></li>
+      <li><a href="daily.html">Daily Assistance</a></li>
+      <li><a href="member.html">Membership</a></li>
+      <li><a href="birthday.html">Birthday Presence</a></li>
+      <li><a href="silver.html">Silver Nest</a></li>
+      <li><a href="about.html">About Us</a></li>
+
+      
+
+    </ul>
+      <button class="nav-cta" onclick="document.getElementById('contactModal').style.display='flex'">Get
+      Started</button>
+    <button class="hamburger" id="ham" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="coreservices.html" onclick="closeMob()">Core Services</a>
+    <a href="daily.html" onclick="closeMob()">Daily Assistance</a>
+    <a href="member.html" onclick="closeMob()">Membership</a>
+    <a href="member.html" onclick="closeMob()">Birthday Presence</a>
+    <a href="silver.html" onclick="closeMob()">Silver Nest</a>
+    <a href="about.html" onclick="closeMob()">About Us</a>
+   
+
+  </div>
+ 
+  <!-- DAILY ASSISTANCE -->
+  <section id="assistance">
+    <div class="section-header">
+      <span class="section-label">Services</span>
+      <h2 class="section-title">Daily Assistance </h2>
+      <p class="section-sub">Our approach combines compassionate human care with hospitality-inspired living, wellness-focused services, and personalized daily assistance designed to help seniors live safely, independently, and joyfully. From companionship visits and wellness programs to assisted living support and family updates, every service is thoughtfully designed around dignity, warmth, and emotional wellbeing.</p>
+    </div>
+    <div class="assist-grid">
+      <div class="assist-card reveal">
+        <div class="assist-card-header"><span class="assist-icon">🏦</span>
+          <h3>Banking</h3>
+        </div>
+        <ul>
+          <li>Bank visits &amp; ATM assistance</li>
+          <li>Online banking support</li>
+          <li>Pension handling</li>
+          <li>Bill payment &amp; document help</li>
+        </ul>
+      </div>
+      <div class="assist-card reveal">
+        <div class="assist-card-header"><span class="assist-icon">📱</span>
+          <h3>Digital Assistance</h3>
+        </div>
+        <ul>
+          <li>Smartphones</li>
+          <li>Video Calls</li>
+          <li>Whatsapp</li>
+          <li>Online Payments</li>
+          <li>OTT Platforms</li>
+        </ul>
+      </div>
+      <div class="assist-card reveal">
+        <div class="assist-card-header"><span class="assist-icon">🛒</span>
+          <h3>Grocery</h3>
+        </div>
+        <ul>
+          <li>Shopping support</li>
+          <li>Essential purchases</li>
+          <li>Home delivery coordination</li>
+        </ul>
+      </div>
+      <div class="assist-card reveal">
+        <div class="assist-card-header"><span class="assist-icon">🏨</span>
+          <h3>Hospital Visits</h3>
+        </div>
+        <ul>
+          <li>Appointment booking</li>
+          <li>Accompaniment to hospitals</li>
+          <li>Consultation support</li>
+          <li>Medical records handling</li>
+        </ul>
+      </div>
+      <div class="assist-card reveal">
+        <div class="assist-card-header"><span class="assist-icon">🔧</span>
+          <h3>Home Management</h3>
+        </div>
+        <ul>
+          <li>Supervising repairs</li>
+          <li>Utility bill handling</li>
+          <li>Housekeeping coordination</li>
+          <li>Appliance servicing</li>
+        </ul>
+      </div>
+      <div class="assist-card reveal">
+        <div class="assist-card-header"><span class="assist-icon">📋</span>
+          <h3>Documents</h3>
+        </div>
+        <ul>
+          <li>ID renewals</li>
+          <li>Insurance paperworks</li>
+          <li>Pension documentation</li>
+          <li>Hospital forms</li>
+        </ul>
+      </div>
+      <div class="assist-card reveal">
+        <div class="assist-card-header"><span class="assist-icon">🥗</span>
+          <h3>Nutrition Monitoring</h3>
+        </div>
+        <ul>
+          <li>Meal tracking</li>
+          <li>Hydration reminders</li>
+          <li>Dietary coordination</li>
+          <li>Diabetes-friendly meal supervision</li>
+        </ul>
+      </div>
+      <div class="assist-card reveal">
+        <div class="assist-card-header"><span class="assist-icon">🌅</span>
+          <h3>Breakfast Assistance</h3>
+        </div>
+        <ul>
+          <li>Morning meal preparation</li>
+          <li>Nutritious breakfast serving</li>
+          <li>Medication reminders</li>
+          <li>Compassionate mealtime company</li>
+        </ul>
+      </div>
+      <div class="assist-card reveal">
+        <div class="assist-card-header"><span class="assist-icon">📖</span>
+          <h3>Reading Companion</h3>
+        </div>
+        <ul>
+          <li>Newspaper &amp; book reading</li>
+          <li>Devotional reading</li>
+          <li>Hobby workshops</li>
+          <li>Social club access</li>
+        </ul>
+      </div>
+      <div class="assist-card reveal">
+        <div class="assist-card-header"><span class="assist-icon">🛕</span>
+          <h3>Temple &amp; Prayer Visits</h3>
+        </div>
+        <ul>
+          <li>Temple / church / mosque visits</li>
+          <li>Prayer meetings</li>
+          <li>Spiritual gatherings</li>
+        </ul>
+      </div>
+      <div class="assist-card reveal">
+        <div class="assist-card-header"><span class="assist-icon">🎨</span>
+          <h3>Hobby Assistance</h3>
+        </div>
+        <ul>
+          <li>Gardening, music, painting</li>
+          <li>Knitting &amp; crafts</li>
+          <li>Hobby workshops</li>
+          <li>Elderly social clubs</li>
+        </ul>
+      </div>
+      <div class="assist-card reveal">
+        <div class="assist-card-header"><span class="assist-icon">🤝</span>
+          <h3>Companionship Visits</h3>
+        </div>
+        <ul>
+          <li>Meaningful conversations</li>
+          <li>Emotional comfort &amp; support</li>
+          <li>Reducing loneliness</li>
+          <li>Social interaction</li>
+        </ul>
+      </div>
+      <div class="assist-card reveal">
+        <div class="assist-card-header"><span class="assist-icon">🚗</span>
+          <h3>Travel Assistance</h3>
+        </div>
+        <ul>
+          <li>Airport pickup/drop</li>
+          <li>Train/Flight coordination</li>
+          <li>Packing support</li>
+          <li>Accompaniment during travel</li>
+        </ul>
+      </div>
+      <div class="assist-card reveal">
+        <div class="assist-card-header"><span class="assist-icon">📄</span>
+          <h3>Legal And Financial</h3>
+        </div>
+        <ul>
+          <li>Insurance</li>
+          <li>Pension assistance</li>
+          <li>Legal documentation help</li>
+          <li>Digital banking support</li>
+          <li>Fraud protection guidance</li>
+        </ul>
+      </div>
+      <div class="assist-card reveal">
+        <div class="assist-card-header"><span class="assist-icon">❤️‍🩹</span>
+          <h3>Wellness Programs</h3>
+        </div>
+        <ul>
+          <li>Nutrition counseling</li>
+          <li>Fitness coaching</li>
+          <li>Ayurveda packages</li>
+          <li>Meditation</li>
+          <li>Sleep programs</li>
+          <li>Emotional wellbeing therapy</li>
+          <li>Longetivity programs</li>
+         
+        </ul>
+      </div>
+      <div class="assist-card reveal">
+        <div class="assist-card-header"><span class="assist-icon">💖</span>
+          <h3>Emotional &amp; Social Support</h3>
+        </div>
+        <ul>
+          <li>Companionship visits</li>
+          <li>Grief counseling</li>
+          <li>Mental wellness Therapy</li>
+          <li>Elderly social Clubs</li>
+          <li>Hobby workshops</li>
+          <li>Intergenerational programs</li>
+          <li>Volunteer engagement</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+
+  
+  <!-- FOOTER -->
+  <footer>
+    <div class="logo"> PrimeLife</div>
+    <p>Caring for your parents like family</p>
+    <p>Service Area: Thrissur, Kerala <br>
+    Contact Us:+91 9188242579 , +1 5879303523 (Canada) <br>
+   primelifetcr@gmail.com <br> www.primelife.org.in
+</p>
+  </footer>
+
+
+
+
+  <!-- Modal Overlay -->
+<div id="contactModal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.5); z-index:1000; align-items:center; justify-content:center;">
+  <div style="background:#fff; border-radius:12px; padding:2rem; width:340px; position:relative; box-shadow:0 20px 60px rgba(0,0,0,0.2);">
+
+    <!-- Close Button -->
+    <button onclick="document.getElementById('contactModal').style.display='none'"
+      style="position:absolute; top:12px; right:12px; background:none; border:none; font-size:22px; cursor:pointer; color:#888;">
+      &times;
+    </button>
+
+    <h2 style="margin:0 0 1.5rem; font-size:20px;">Contact Us</h2>
+
+    <!-- Address -->
+    <div style="display:flex; gap:12px; margin-bottom:1rem;">
+      <span style="font-size:22px;">📍</span>
+      <div>
+        <p style="margin:0; font-size:12px; color:#888;">Service Area</p>
+        <p style="margin:0; font-weight:500;">Thrissur, Kerala</p>
+      </div>
+    </div>
+
+    <!-- Phone -->
+    <div style="display:flex; gap:12px; margin-bottom:1rem;">
+      <span style="font-size:22px;">📞</span>
+      <div>
+        <p style="margin:0; font-size:12px; color:#888;">Phone</p>
+        <p style="margin:0; font-weight:500;">+91 9188242576</p>
+        <p style="margin:0; font-weight:500;">+1 5879303523</p>
+      </div>
+    </div>
+
+    <!-- Email -->
+    <div style="display:flex; gap:12px;">
+      <span style="font-size:22px;">✉️</span>
+      <div>
+        <p style="margin:0; font-size:12px; color:#888;">Email</p>
+        <p style="margin:0; font-weight:500;">primelifetcr@gmail.com</p>
+      </div>
+    </div>
+     <!-- web -->
+    <div style="display:flex; gap:12px;">
+      <span style="font-size:22px;">✉️</span>
+      <div>
+        <p style="margin:0; font-size:12px; color:#888;">Website</p>
+        <p style="margin:0; font-weight:500;">www.primelife.org.in</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+  <script>
+    // Hamburger
+    const ham = document.getElementById('ham');
+    const mob = document.getElementById('mobileMenu');
+    ham.addEventListener('click', () => mob.classList.toggle('open'));
+    function closeMob() { mob.classList.remove('open'); }
+
+    // Scroll reveal
+    const reveals = document.querySelectorAll('.reveal');
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          setTimeout(() => e.target.classList.add('visible'), (i % 6) * 80);
+          obs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.08 });
+    reveals.forEach(r => obs.observe(r));
+
+    // Smooth nav active state
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-links a');
+    window.addEventListener('scroll', () => {
+      let cur = '';
+      sections.forEach(s => { if (window.scrollY >= s.offsetTop - 100) cur = s.id; });
+      navLinks.forEach(a => {
+        a.style.color = a.getAttribute('href') === '#' + cur ? 'var(--gold)' : '';
+      });
+    });
+  </script>
+</body>
+
+</html>

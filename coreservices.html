@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PrimeLife</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <a class="nav-logo" href="index.html">  PrimeLife</a>
+        <ul class="nav-links">
+            <li><a href="coreservices.html">Core Services</a></li>
+            <li><a href="daily.html">Daily Assistance</a></li>
+            <li><a href="member.html">Membership</a></li>
+            <li><a href="birthday.html">Birthday Presence</a></li>
+            <li><a href="silver.html">Silver Nest</a></li>
+            <li><a href="about.html">About Us</a></li>
+
+          
+
+        </ul>
+          <button class="nav-cta" onclick="document.getElementById('contactModal').style.display='flex'">Get
+      Started</button>
+        <button class="hamburger" id="ham" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="coreservices.html" onclick="closeMob()">Core Services</a>
+        <a href="daily.html" onclick="closeMob()">Daily Assistance</a>
+        <a href="member.html" onclick="closeMob()">Membership</a>
+        <a href="member.html" onclick="closeMob()">Birthday Presence</a>
+        <a href="silver.html" onclick="closeMob()">Silver Nest</a>
+        <a href="about.html" onclick="closeMob()">About Us</a>
+      
+
+    </div>
+
+
+    <!-- CORE & LIFESTYLE SERVICES -->
+    <section id="services">
+        <div class="section-header">
+            <span class="section-label">Comfort . Care . Community</span>
+            <h2 class="section-title">Prime Life Senior Living Services</h2>
+            <p class="section-sub">Serving Seniors Across Thrissur <br><br>
+
+                Prime Life is designed for active seniors who value independence, comfort, safety, and meaningful social
+                connection. Our thoughtfully curated services help seniors enjoy a stress-free, dignified, and vibrant
+                lifestyle while giving families complete peace of mind.</p>
+        </div>
+        <div class="services-grid" ">
+            <div class="service-card reveal">
+                <div class="service-icon">🏠</div>
+                <h3>Core Living Services</h3>
+                <p>Essential day-to-day support for a safe and comfortable home environment.</p>
+                <div class="service-tags">
+                    <span class="tag">Housekeeping</span>
+                    <span class="tag">Healthy Meal Plans</span>
+                    <span class="tag">Transportation</span>
+                    <span class="tag">Concierge desk</span>
+                    <span class="tag">Maintenance support</span>
+                    <span class="tag">Grocery/Pharmacy Assist</span>
+                </div>
+            </div>
+            <div class="service-card reveal">
+                <div class="service-icon">🌿</div>
+                <h3>Lifestyle Services</h3>
+                <p>Enriching activities that nurture the mind, body, and spirit every day.</p>
+                <div class="service-tags">
+                    <span class="tag">Yoga &amp; Wellness </span>
+                    <span class="tag">Walking Clubs</span>
+                    <span class="tag">Hobby Workshops</span>
+                    <span class="tag">Music &amp; Cultural Evenings</span>
+                    <span class="tag">Spiritual Sessions</span>
+                    <span class="tag">Travel Groups</span>
+                    <span class="tag">Gardening Clubs</span>
+                </div>
+                
+            </div>
+                        <div class="service-card reveal">
+                <div class="service-icon">📆</div>
+                <h3>Daily Assistance </h3>
+                
+                <div class="service-tags">
+                    <span class="tag">Banking assistance</span>
+                    <span class="tag">Medication assistance</span>
+                    <span class="tag">Grocery assistance</span>
+                    <span class="tag">Hospital visit assistance</span>
+                    <span class="tag">Digital assistance</span>
+                    <span class="tag">Home management assistance</span>
+                    <span class="tag">Travel assistance</span>
+                    <span class="tag">Document assistance</span>
+                    <span class="tag">Legal &amp; financial assistance</span>
+                    <span class="tag">Nutrition monitoring</span>
+                    <span class="tag">Wellness programs</span>
+                    <span class="tag">Evening walk assistance</span>
+                    <span class="tag">Companionship assistance</span>
+                    <span class="tag">Reading companion</span>
+                    <span class="tag">Prayer &amp; temple assistance</span>
+                    <span class="tag">Hobby assistance</span>
+                    <span class="tag">Emotional &amp; social support services</span>
+                    <span class="tag">Breakfast assisting</span>
+                    <span class="tag">Birthday presence service</span>
+                  
+                  
+                </div>
+            </div>
+
+    </section>
+    <section id="special">
+        <div class="specials-grid">
+            <div class="special-card special-birthday reveal">
+                
+
+                <h3>Membership</h3>
+                <span class="s-label">Subscription Plans</span>
+                <p> <b>SILVER</b> - Basic Care<br>
+                    <b>GOLD</b> - Advanced Care <br>
+                    <b>PLATINUM</b> - Premium NRI Package<br>
+                    <b>SILVER NEST</b> - Club Membership <br>
+                    
+                </p>
+            </div>
+          
+        </div>
+        
+    </section>
+
+    
+
+
+  
+
+  
+  <!-- FOOTER -->
+  <footer>
+    <div class="logo"> PrimeLife</div>
+    <p>Caring for your parents like family</p>
+    <p>Service Area: Thrissur, Kerala <br>
+    Contact Us:+91 9188242579 , +1 5879303523 (Canada) <br>
+   primelifetcr@gmail.com <br> www.primelife.org.in
+</p>
+  </footer>
+
+
+
+
+  <!-- Modal Overlay -->
+<div id="contactModal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.5); z-index:1000; align-items:center; justify-content:center;">
+  <div style="background:#fff; border-radius:12px; padding:2rem; width:340px; position:relative; box-shadow:0 20px 60px rgba(0,0,0,0.2);">
+
+    <!-- Close Button -->
+    <button onclick="document.getElementById('contactModal').style.display='none'"
+      style="position:absolute; top:12px; right:12px; background:none; border:none; font-size:22px; cursor:pointer; color:#888;">
+      &times;
+    </button>
+
+    <h2 style="margin:0 0 1.5rem; font-size:20px;">Contact Us</h2>
+
+    <!-- Address -->
+    <div style="display:flex; gap:12px; margin-bottom:1rem;">
+      <span style="font-size:22px;">📍</span>
+      <div>
+        <p style="margin:0; font-size:12px; color:#888;">Service Area</p>
+        <p style="margin:0; font-weight:500;">Thrissur, Kerala</p>
+      </div>
+    </div>
+
+    <!-- Phone -->
+    <div style="display:flex; gap:12px; margin-bottom:1rem;">
+      <span style="font-size:22px;">📞</span>
+      <div>
+        <p style="margin:0; font-size:12px; color:#888;">Phone</p>
+        <p style="margin:0; font-weight:500;">+91 9188242576</p>
+        <p style="margin:0; font-weight:500;">+1 5879303523</p>
+      </div>
+    </div>
+
+    <!-- Email -->
+    <div style="display:flex; gap:12px;">
+      <span style="font-size:22px;">✉️</span>
+      <div>
+        <p style="margin:0; font-size:12px; color:#888;">Email</p>
+        <p style="margin:0; font-weight:500;">primelifetcr@gmail.com</p>
+      </div>
+    </div>
+     <!-- web -->
+    <div style="display:flex; gap:12px;">
+      <span style="font-size:22px;">✉️</span>
+      <div>
+        <p style="margin:0; font-size:12px; color:#888;">Website</p>
+        <p style="margin:0; font-weight:500;">www.primelife.org.in</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+    <script>
+        // Hamburger
+        const ham = document.getElementById('ham');
+        const mob = document.getElementById('mobileMenu');
+        ham.addEventListener('click', () => mob.classList.toggle('open'));
+        function closeMob() { mob.classList.remove('open'); }
+
+        // Scroll reveal
+        const reveals = document.querySelectorAll('.reveal');
+        const obs = new IntersectionObserver((entries) => {
+            entries.forEach((e, i) => {
+                if (e.isIntersecting) {
+                    setTimeout(() => e.target.classList.add('visible'), (i % 6) * 80);
+                    obs.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.08 });
+        reveals.forEach(r => obs.observe(r));
+
+        // Smooth nav active state
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-links a');
+        window.addEventListener('scroll', () => {
+            let cur = '';
+            sections.forEach(s => { if (window.scrollY >= s.offsetTop - 100) cur = s.id; });
+            navLinks.forEach(a => {
+                a.style.color = a.getAttribute('href') === '#' + cur ? 'var(--gold)' : '';
+            });
+        });
+    </script>
+</body>
+
+</html>

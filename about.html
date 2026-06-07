@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PrimeLife</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a class="nav-logo" href="index.html">  PrimeLife</a>
+    <ul class="nav-links">
+      <li><a href="coreservices.html">Core Services</a></li>
+      <li><a href="daily.html">Daily Assistance</a></li>
+      <li><a href="member.html">Membership</a></li>
+      <li><a href="birthday.html">Birthday Presence</a></li>
+      <li><a href="silver.html">Silver Nest</a></li>
+      <li><a href="about.html">About Us</a></li>
+
+   
+
+    </ul>
+       <button class="nav-cta" onclick="document.getElementById('contactModal').style.display='flex'">Get
+      Started</button>
+    <button class="hamburger" id="ham" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="coreservices.html" onclick="closeMob()">Core Services</a>
+    <a href="daily.html" onclick="closeMob()">Daily Assistance</a>
+    <a href="member.html" onclick="closeMob()">Membership</a>
+    <a href="member.html" onclick="closeMob()">Birthday Presence</a>
+    <a href="silver.html" onclick="closeMob()">Silver Nest</a>
+    <a href="about.html" onclick="closeMob()">About Us</a>
+   
+
+  </div>
+
+
+
+
+  <section id="emotional">
+    <div class="section-header">
+      <span class="section-label">Know</span>
+      <h2 class="section-title">About Us</h2>
+      <p class="section-sub" style="max-width: max-content;">At Prime Life, we believe growing older should never mean
+        growing lonely, dependent, or disconnected. We created Prime Life to redefine senior living with dignity,
+        comfort, companionship, and peace of mind for both seniors and the families who love them.</p>
+      <p class="section-sub" style="max-width: max-content;">Born from a deep understanding of modern family life,
+        especially the emotional challenges faced by NRIs and children living away from their parents, Prime Life was
+        built to become more than a care service. We are a trusted support system, a caring community, and a reassuring
+        presence in the lives of seniors. </p>
+      <p class="section-sub" style="max-width: max-content;">Our vision is to build a new standard for senior living in
+        Kerala. One that blends care, community, wellness, and modern lifestyle experiences into a vibrant and
+        fulfilling way of life for seniors.</p>
+      <p class="section-sub" style="max-width: max-content;">Because every parent deserves to age with dignity. <br>
+        And every family deserves peace of mind.</p>
+    </div>
+     <div class="section-header">
+     
+      <h2 class="section-title">Why Families Choose Prime Life
+
+</h2>
+      <p class="section-sub" style="max-width: max-content;">Compassionate & Trusted Care <br>
+      Personalized Senior Support <br>
+    Premium Lifestyle Approach <br>
+  Safe & Dignified Service Experience <br>
+NRI-Friendly Family Updates <br>
+Community-Focused Living <br>
+Hospitality-Inspired Senior Care</p>
+      
+    </div>
+
+    
+  </section>
+
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="logo"> PrimeLife</div>
+    <p>Caring for your parents like family</p>
+    <p>Service Area: Thrissur, Kerala <br>
+    Contact Us:+91 9188242579 , +1 5879303523 (Canada) <br>
+   primelifetcr@gmail.com <br> www.primelife.org.in
+</p>
+  </footer>
+
+
+
+
+  
+  <!-- Modal Overlay -->
+<div id="contactModal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.5); z-index:1000; align-items:center; justify-content:center;">
+  <div style="background:#fff; border-radius:12px; padding:2rem; width:340px; position:relative; box-shadow:0 20px 60px rgba(0,0,0,0.2);">
+
+    <!-- Close Button -->
+    <button onclick="document.getElementById('contactModal').style.display='none'"
+      style="position:absolute; top:12px; right:12px; background:none; border:none; font-size:22px; cursor:pointer; color:#888;">
+      &times;
+    </button>
+
+    <h2 style="margin:0 0 1.5rem; font-size:20px;">Contact Us</h2>
+
+    <!-- Address -->
+    <div style="display:flex; gap:12px; margin-bottom:1rem;">
+      <span style="font-size:22px;">📍</span>
+      <div>
+        <p style="margin:0; font-size:12px; color:#888;">Service Area</p>
+        <p style="margin:0; font-weight:500;">Thrissur, Kerala</p>
+      </div>
+    </div>
+
+    <!-- Phone -->
+    <div style="display:flex; gap:12px; margin-bottom:1rem;">
+      <span style="font-size:22px;">📞</span>
+      <div>
+        <p style="margin:0; font-size:12px; color:#888;">Phone</p>
+        <p style="margin:0; font-weight:500;">+91 9188242576</p>
+        <p style="margin:0; font-weight:500;">+1 5879303523</p>
+      </div>
+    </div>
+
+    <!-- Email -->
+    <div style="display:flex; gap:12px;">
+      <span style="font-size:22px;">✉️</span>
+      <div>
+        <p style="margin:0; font-size:12px; color:#888;">Email</p>
+        <p style="margin:0; font-weight:500;">primelifetcr@gmail.com</p>
+      </div>
+    </div>
+     <!-- web -->
+    <div style="display:flex; gap:12px;">
+      <span style="font-size:22px;">✉️</span>
+      <div>
+        <p style="margin:0; font-size:12px; color:#888;">Website</p>
+        <p style="margin:0; font-weight:500;">www.primelife.org.in</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  <script>
+    // Hamburger
+    const ham = document.getElementById('ham');
+    const mob = document.getElementById('mobileMenu');
+    ham.addEventListener('click', () => mob.classList.toggle('open'));
+    function closeMob() { mob.classList.remove('open'); }
+
+    // Scroll reveal
+    const reveals = document.querySelectorAll('.reveal');
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          setTimeout(() => e.target.classList.add('visible'), (i % 6) * 80);
+          obs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.08 });
+    reveals.forEach(r => obs.observe(r));
+
+    // Smooth nav active state
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-links a');
+    window.addEventListener('scroll', () => {
+      let cur = '';
+      sections.forEach(s => { if (window.scrollY >= s.offsetTop - 100) cur = s.id; });
+      navLinks.forEach(a => {
+        a.style.color = a.getAttribute('href') === '#' + cur ? 'var(--gold)' : '';
+      });
+    });
+  </script>
+</body>
+
+</html>
