@@ -52,6 +52,7 @@ nav {
 }
 
 .nav-logo {
+    
     font-family: 'Playfair Display', serif;
     font-size: 1.25rem;
     font-weight: 700;
@@ -61,6 +62,7 @@ nav {
     align-items: center;
     gap: 10px;
 }
+
 
 .nav-logo span {
     color: var(--gold);
@@ -148,35 +150,22 @@ nav {
 
 /* ── HERO ── */
 .hero {
-    min-height: 100vh;
-    display: grid;
-    place-items: center;
-    padding: clamp(5rem, 10vw, 8rem) clamp(1.5rem, 6vw, 4rem) clamp(3rem, 6vw, 5rem);
-    background:
-        radial-gradient(ellipse 70% 50% at 80% 40%, rgba(200, 151, 58, 0.12) 0%, transparent 60%),
-        radial-gradient(ellipse 50% 60% at 10% 80%, rgba(107, 140, 110, 0.08) 0%, transparent 50%),
-        var(--cream);
-    position: relative;
-    overflow: hidden;
+  width: 100%;
+  height: calc(100vh+64px); /* adjust as needed */
+  overflow: hidden;
+  background-color: black;
 }
 
-.hero::before {
-    content: '';
-    position: absolute;
-    top: -100px;
-    right: -150px;
-    width: 600px;
-    height: 600px;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(200, 151, 58, 0.08) 0%, transparent 70%);
-    pointer-events: none;
+
+.hero img {
+    margin-top: 64px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
 }
 
-.hero-inner {
-    max-width: 900px;
-    text-align: center;
-    animation: fadeUp 0.9s ease both;
-}
 
 .hero-badge {
     display: inline-flex;
@@ -252,8 +241,8 @@ nav {
 
 .btn-outline {
     background: transparent;
-    color: var(--deep);
-    border: 1.5px solid rgba(44, 36, 22, 0.25);
+    color:white;
+    border: 1.5px solid rgb(255, 255, 255);
     border-radius: 40px;
     padding: 14px 32px;
     font-size: 0.95rem;
@@ -273,8 +262,9 @@ nav {
     justify-content: center;
     gap: clamp(1.5rem, 5vw, 4rem);
     margin-top: 3.5rem;
+    margin-bottom:3.5rem ;
     padding-top: 2.5rem;
-    border-top: 1px solid rgba(200, 151, 58, 0.2);
+    border-top: 1px solid rgb(255, 255, 255);
     flex-wrap: wrap;
 }
 
@@ -286,13 +276,13 @@ nav {
     font-family: 'Playfair Display', serif;
     font-size: clamp(1.8rem, 4vw, 2.5rem);
     font-weight: 700;
-    color: var(--gold);
+    color: white;
     display: block;
 }
 
 .stat-label {
     font-size: 0.8rem;
-    color: var(--muted);
+    color: white;
     font-weight: 400;
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -324,7 +314,7 @@ section {
 
 .section-sub {
     font-size: 1rem;
-    color: var(--mid);
+    color: black;
     max-width: 560px;
     line-height: 1.7;
     font-weight: 300;
@@ -336,7 +326,7 @@ section {
 
 /* ── SERVICES ── */
 #services {
-    background: var(--warm-white);
+    background: white;
 }
 
 .services-grid {
@@ -399,7 +389,7 @@ section {
 
 .service-card p {
     font-size: 0.875rem;
-    color: var(--mid);
+    color: black;
     line-height: 1.6;
 }
 
@@ -412,7 +402,7 @@ section {
 
 .tag {
     background: var(--gold-pale);
-    color: var(--mid);
+    color: black;
     font-size: 0.72rem;
     padding: 3px 10px;
     border-radius: 20px;
@@ -421,7 +411,7 @@ section {
 
 /* ── PLANS ── */
 #plans {
-    background: var(--cream);
+    background: white;
 }
 
 .plans-grid {
@@ -444,7 +434,7 @@ section {
 }
 
 .plan-silver {
-    background: var(--warm-white);
+    background: rgb(239, 233, 233);
     border: 1.5px solid var(--silver-light);
 }
 
@@ -507,7 +497,7 @@ section {
 
 .plan-price {
     font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: 700;
     margin: 1rem 0 0.2rem;
 }
@@ -557,12 +547,12 @@ section {
 }
 
 .plan-silver .plan-features li {
-    color: var(--mid);
+    color: black;
 }
 
 .plan-gold .plan-features li,
 .plan-platinum .plan-features li {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgb(255, 255, 255);
 }
 
 .check {
@@ -686,7 +676,7 @@ section {
 
 .assist-card ul li {
     font-size: 0.8rem;
-    color: var(--mid);
+    color: black;
     display: flex;
     align-items: center;
     gap: 6px;
@@ -759,7 +749,7 @@ section {
 }
 
 #emotional .section-sub {
-    color: rgba(255, 255, 255, 0.65);
+    color: rgb(255, 255, 255);
 }
 
 .emotional-grid {
@@ -797,13 +787,13 @@ section {
 
 .emotional-card p {
     font-size: 0.82rem;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgb(255, 255, 255);
     line-height: 1.6;
 }
 
 /* ── SPECIAL SERVICES HIGHLIGHT ── */
 #special {
-    background: var(--warm-white);
+    background:white;
 }
 
 .specials-grid {
@@ -845,7 +835,7 @@ section {
 }
 
 .special-birthday .s-label {
-    color: var(--gold);
+    color: black;
 }
 
 .special-walk .s-label {
@@ -862,7 +852,7 @@ section {
 
 .special-card p {
     font-size: 0.875rem;
-    color: var(--mid);
+    color: black;
     line-height: 1.7;
 }
 
@@ -876,7 +866,7 @@ section {
 
 /* ── CTA ── */
 #cta {
-    background: linear-gradient(135deg, #c8973a 0%, #a67828 100%);
+    background: linear-gradient(135deg, #0f612db7 0%, #063a16 100%);
     color: white;
     text-align: center;
     padding: clamp(3rem, 8vw, 6rem) clamp(1.5rem, 6vw, 4rem);
@@ -889,7 +879,7 @@ section {
 }
 
 #cta p {
-    color: rgba(255, 255, 255, 0.85);
+    color: rgb(255, 255, 255);
     max-width: 500px;
     margin: 0 auto 2.5rem;
     line-height: 1.7;
@@ -916,7 +906,7 @@ section {
 /* ── FOOTER ── */
 footer {
     background: var(--deep);
-    color: rgba(255, 255, 255, 0.6);
+    color: rgb(255, 255, 255);
     padding: 2.5rem clamp(1.5rem, 6vw, 4rem);
     display: flex;
     justify-content: space-between;
@@ -985,4 +975,19 @@ footer p {
     .plans-grid {
         grid-template-columns: 1fr;
     }
+}
+
+
+.image-row {
+  display: flex;
+  gap: 10px;         
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.image-row img {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  display: block;
 }
